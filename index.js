@@ -6,7 +6,7 @@ let result = document.getElementById("result");
 
 let getMovie = () => {
     let movieName = movieNameRef.value;
-    let url = `http://www.omdbapi.com/?t=${movieName}&apikey=${key}`;
+    let url = `https://cors-anywhere.herokuapp.com/http://www.omdbapi.com/?t=${movieName}&apikey=${key}`;
   
 
     if (movieName.length <= 0) {
